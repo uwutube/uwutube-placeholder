@@ -35,23 +35,17 @@ h1 {
     height: 25vw;
 }
 
-@media screen and (max-width: 1280px) {
-    #video-wrapper iframe {
-        width: 100vw;
-        height: 50vw;
-    }
-}
-
 .logo-icon {
     display: inline-flex;
     font-family: 'Poppins', sans-serif;
     font-style: oblique;
     font-weight: 800;
-    width: 32px;
-    height: 32px;
+    width: 50vw;
+    height: 50vw;
     align-items: center;
     background: #fe71dc;
-    border-radius: 32px;
+    border-radius: 50vw;
+    font-size: 16vw;
 }
 
 .logo-icon::after {
@@ -60,4 +54,18 @@ h1 {
     display: inline-block;
     width: calc(100% - 3px);
     text-align: center;
+}
+
+@media screen and (max-width: 1280px) {
+    #video-wrapper iframe {
+        width: 100vw;
+        height: 50vw;
+    }
+
+    .logo-icon {
+        width: 32px;
+        height: 32px;
+        border-radius: 32px;
+        font-size: 16px;
+    }
 }
