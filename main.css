@@ -61,8 +61,8 @@ h1 {
 
 @media screen and (max-width: 1280px) {
     #video-wrapper iframe {
-        width: 100vw;
-        height: 50vw;
+        width: 90vw;
+        height: 45vw;
     }
 
     .logo-icon {
@@ -74,5 +74,9 @@ h1 {
 
     .logo-icon::after {
         width: calc(100% - 3px);
+    }
+
+    h1 {
+        font-size: 16px;
     }
 }
