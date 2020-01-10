@@ -40,12 +40,13 @@ h1 {
     font-family: 'Poppins', sans-serif;
     font-style: oblique;
     font-weight: 800;
-    width: 50vw;
-    height: 50vw;
+    width: 64px;
+    height: 64px;
     align-items: center;
     background: #fe71dc;
-    border-radius: 50vw;
-    font-size: 16vw;
+    border-radius: 32px;
+    font-size: 32px;
+    margin-right: 16px;
 }
 
 .logo-icon::after {
