@@ -9,11 +9,11 @@ body {
     justify-content: center;
     align-items: center;
 
-    background: #000;
+    background: #0E0E0E;
     color: #fff;
     
-    font-weight: 800;
-    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-family: "Nunito", sans-serif;
 }
 
 * {
