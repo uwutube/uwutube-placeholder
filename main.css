@@ -31,7 +31,8 @@ body {
 
 #text-wrapper > img {
     margin-right: 16px;
-    width: 75vw;
+    width: 64px;
+    height: 64px;
 }
 
 body > * {
