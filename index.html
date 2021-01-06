@@ -25,11 +25,16 @@
         </div>
 
         <div id="ios-install-prompt">
-            Install this app on your iOS device by tapping share and then "Add to Home Screen".
+            <span>Install this app on your iOS device by tapping share and then "Add to Home Screen".</span>
+            <a href="#" onclick="setIosInstallPromptVisible(false)">Dismiss</a>
         </div>
     </body>
 
     <script>
+        const setIosInstallPromptVisible = (visible) => {
+            document.querySelector("#ios-install-prompt").style.display = visible ? "unset" : "none";
+        }
+
         if ('serviceWorker' in navigator)
         {
             navigator.serviceWorker.register("/service-worker.js").then(function() {
@@ -49,7 +54,7 @@
         }
 
         if (isIosDevice() && !isInStandalone()) {
-            document.querySelector("#ios-install-prompt").style.display = "unset";
+            setIosInstallPromptVisible(true);
         }
     </script>
     
