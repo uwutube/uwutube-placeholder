@@ -32,7 +32,8 @@
 
     <script>
         const setIosInstallPromptVisible = (visible) => {
-            document.querySelector("#ios-install-prompt").style.display = visible ? "unset" : "none";
+            console.log("setInstallVisible");
+            document.querySelector("#ios-install-prompt").style.display = visible ? "flex" : "none";
         }
 
         if ('serviceWorker' in navigator)
