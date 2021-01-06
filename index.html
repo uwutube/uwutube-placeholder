@@ -21,6 +21,10 @@
         <div id="text-wrapper">
             <img width="128" height="128" src="img/logo.svg" alt="uwutube logo"><h1>coming soon...?</h1>
         </div>
+
+        <div id="ios-install-prompt">
+            Install this app on your iOS device by tapping share and then "Add to Home Screen".
+        </div>
     </body>
 
     <script>
@@ -31,6 +35,19 @@
             }, function() {
                 console.log("Service worker failed to register");
             });
+        }
+
+        const isIosDevice = () => {
+            let userAgent = window.navigator.userAgent.toLowerCase();
+            return userAgent.indexOf("iphone") > -1 || userAgent.indexOf("ipad") > -1 || userAgent.indexOf("ipod") > -1;
+        }
+
+        const isInStandalone = () => { 
+            ("standalone" in window.navigator) && (window.navigator.standalone);
+        }
+
+        if (isIosDevice() && !isInStandalone()) {
+            document.querySelector("#ios-install-prompt").style.display = "unset";
         }
     </script>
     
