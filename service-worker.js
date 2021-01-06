@@ -5,7 +5,7 @@ self.addEventListener("install", function (event) {
         .then(function (cache) {
             return cache.addAll([
                 "/",
-                "/img/logo.svg",
+                "/images/logo.svg",
                 "/main.css",
                 "/index.html"
             ]);

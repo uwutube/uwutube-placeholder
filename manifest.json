@@ -1,18 +1,25 @@
 {
-    "short_name": "uwutube",
-    "name": "uwutube",
-    "description": "the platform for creators",
-    "icons": [
-      {
-        "src": "/img/logo.svg",
-        "type": "image/svg+xml",
-        "sizes": "512x512"
-      }
-    ],
-    "start_url": "/",
-    "background_color": "#000000",
-    "display": "standalone",
-    "orientation": "portrait",
-    "scope": "/",
-    "theme_color": "#fe71dc"
-  }
+  "short_name": "uwutube",
+  "name": "uwutube",
+  "description": "the platform for creators",
+  "icons": [
+    {
+      "src": "/images/logo-darktext.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/logo_darktext_maskable.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0E0E0E",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "theme_color": "#fe71dc"
+}
