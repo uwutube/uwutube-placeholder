@@ -50,7 +50,7 @@
         }
 
         const isInStandalone = () => { 
-            return ("standalone" in window.navigator) && (window.navigator.standalone);
+            return (window.navigator.standalone === true);
         }
 
         if (isIosDevice() && !isInStandalone()) {
