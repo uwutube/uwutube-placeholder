@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: uwutube-placeholder
+  annotations:
+    github.com/project-slug: uwutube/uwutube-placeholder
+spec:
+  type: other
+  lifecycle: unknown
+  owner: uwutube
